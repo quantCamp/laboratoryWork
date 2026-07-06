@@ -7,7 +7,7 @@ import plt
 def flip_coin(n):
     heads_count = 0
 
-    for i in range(n):
+    for _ in range(n):
         toss = random.randint(0, 1)
         if toss == 1:
             heads_count += 1
