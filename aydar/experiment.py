@@ -58,7 +58,7 @@ def run_series(n, num_runs=5):
 
 # --- 1. Готовим данные для графиков ---
 # По оси X у нас количество бросков монеты (N)
-n_values = [10, 100, 1000, 10000, 100000, 1000000, 3000000, 5000000]
+n_value = [10, 100, 1000, 10000, 100000, 1000000, 3000000, 5000000]
 
 
 # По оси Y для первого графика — средние отклонения
@@ -69,7 +69,7 @@ deviations = []
 # ВНИМАНИЕ: Замените эти цифры на ваши замеры времени!
 times = []
 
-for n in n_values:
+for n in n_value:
     freq_list, frequency_value, time_work_value, deviation_value, max_time, min_time = run_series(n)
     deviations.append(deviation_value)
     times.append(time_work_value)
