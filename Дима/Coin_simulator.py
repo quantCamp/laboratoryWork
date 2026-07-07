@@ -53,7 +53,7 @@ def run_series(n, num_runs=5):
     min_et = min(elapsed_time)
 
     return frequency, average_freq, average_dev, average_et, min_et, max_et
-
+print(run_series(10))
 # --- 2. Строим первый график (Точность симуляции) ---
 plt.figure(figsize=(6, 4)) # Создаем окно для графика размером 6 на 4 дюйма
 
